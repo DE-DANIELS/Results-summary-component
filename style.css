@@ -34,11 +34,11 @@ section {
 }
 #main {
     background-color: var(--body-color);
-    width: 300px;
     box-shadow: 1px 1px 10px gray;
 }
 /* Top part */
 .result{
+    width: 300px;
     text-align: center;
     color: var(--text-color);
     background-image: var(--body1-color);
