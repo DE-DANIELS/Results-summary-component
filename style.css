@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --body1-color: linear-gradient(#6441fd, #352feb);
+    --text-color: #fbf9ff;
+    --text1-color: #db6a6c;
+    --text2-color: #ffcc5e;
+    --text3-color: #32ba94;
+    --text4-color: #3d49c3;
+    --bg-color1: #fff6f5;
+    --bg-color2: #fffbf2;
+    --bg-color3: #f2fbfa;
+    --bg-color4: #f3f3fd;
+    --btn-color: #303b59;
+    --body-color: #ffffff;
+    --big-fontsize: 45px;
+    --p-fontsize1: 14px;
+    --p-fontsize2: 19px;
+    --p-fontsize3: 13px;
+    --font-family: 'Hanken Grotesk';
+}
+body {
+    background-color: var(--body-color);
+    font-family: var(--font-family);
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#main {
+    background-color: var(--body-color);
+    width: 300px;
+    box-shadow: 1px 1px 10px gray;
+}
+/* Top part */
+.result{
+    text-align: center;
+    color: var(--text-color);
+    background-image: var(--body1-color);
+    padding: 10px 40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 15px;
+}
+.result h4{
+    color: #d1c0ff;
+    font-size: var(--p-fontsize);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 10px 0 15px;
+}
+.result .score {
+    width: 110px;
+    height: 110px;
+    background-image: linear-gradient(#3d25da, rgb(71, 52, 240, 0.7)) ;
+    border-radius: 50%;
+    padding-top: 20px;
+    margin: 10px auto 20px;
+}
+.result .score h1{
+    font-size: var(--big-fontsize);
+    font-weight: 800;
+}
+.result .score h5{
+    font-size: var(--p-fontsize1);
+    color: #7667ff;
+}
+.result h3 {
+    color: var(--text-color);
+    font-size: var(--p-fontsize2);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.result p {
+    color: #a09bf8;
+    font-size: var(--p-fontsize3);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+/* Bottom part */
+.summary {
+    padding: 5px 17px;
+    margin: 5px auto;
+}
+.summary h3 {
+    color: var(--btn-color);
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+.sub-div {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    font-size: var(--p-fontsize1);
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+#reaction {
+    color: var(--text1-color);
+    background-color: var(--bg-color1);
+    border: 2px solid var(--bg-color1);
+}
+#memory {
+    color: var(--text2-color);
+    background-color: var(--bg-color2);
+    border: 2px solid var(--bg-color2);
+}
+#verbal {
+    color: var(--text3-color);
+    background-color: var(--bg-color3);
+    border: 2px solid var(--bg-color3);
+}
+#visual {
+    color: var(--text4-color);
+    background-color: var(--bg-color4);
+    border: 2px solid var(--bg-color4);
+}
+.summary .value {
+    color: var(--btn-color);
+    font-size: 16px;
+    font-weight: 800;
+}
+.summary span {
+    color: #b1b1af;
+}
+.summary .bi, .summary .fa-brain{
+    margin-right: 5px;
+}
+.btn {
+    width: 100%;
+    padding: 13px;
+    margin: 5px auto 15px;
+    font-size: var(--p-fontsize1);
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--body-color);
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    border: none;
+}
+.btn:hover {
+    background-image: var(--body1-color);
+    cursor: pointer;
+}
+@media  screen and (min-width: 641px) {
+    #main {
+        display: flex;
+        width: 500px;
+        border-radius: 25px;
+        box-shadow: 5px 5px 15px #f5f8ff;
+    }
+    .result, .summary {
+        width: 50%;
+        margin: 0;
+    }
+    .result {
+        padding: 15px 33px 0;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    .result p{
+        margin-bottom: 0;
+    }
+    .result h3{
+        margin-bottom: 10px;
+    }
+    .result .score{
+        width: 125px;
+        height: 125px;
+        padding-top: 25px;
+        margin-top: 20px;
+    }
+    .summary {
+        margin: 7px 7px 0;
+        padding: 10px 17px 7px;
+    }
+    .btn {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Icon -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    >
+    <!-- Font Awesome -->
+    <script 
+        src="https://kit.fontawesome.com/d84f9ea30a.js" 
+        crossorigin="anonymous">
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&display=swap" 
+        rel="stylesheet"
+    >
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Results summary component</title>
+</head>
+<body>
+    <section>
+        <div id="main">
+            <div class="result">
+                <h4>Your result</h4>
+                <div class="score">
+                    <h1>76</h1>
+                    <h5>of 100</h5>
+                </div>
+                <h3>great</h3>
+                <p>You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+            <div class="summary">
+                <h3>summary</h3>
+                <div id="reaction" class="sub-div">
+                    <div class="reaction">
+                        <i class="bi bi-lightning-charge"></i>
+                        reaction
+                    </div>
+                    <div class="value">
+                        <h5>80<span>/100</span></h5>
+                    </div>
+                </div>
+                <div id="memory" class="sub-div">
+                    <div class="memory">
+                        <i class="fa-solid fa-brain"></i>
+                        memory
+                    </div>
+                    <div class="value" class="sub-div">
+                        <h5>92<span>/100</span></h5>
+                    </div>
+                </div>
+                <div id="verbal"  class="sub-div">
+                    <div class="verbal">
+                        <i class="bi bi-chat"></i>
+                        verbal
+                    </div>
+                    <div class="value">
+                        <h5>61<span>/100</span></h5>
+                    </div>
+                </div>
+                <div id="visual" class="sub-div">
+                    <div class="visual">
+                        <i class="bi bi-eye"></i>
+                        visual
+                    </div>
+                    <div class="value">
+                        <h5>72<span>/100</span></h5>
+                    </div>
+                </div>
+    
+                <div id="button">
+                    <button type="button" class="btn">continue</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
