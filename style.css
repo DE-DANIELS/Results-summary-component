@@ -37,7 +37,7 @@ section {
 }
 /* Top part */
 .result{
-    width: 300px;
+    width: 320px;
     text-align: center;
     color: var(--text-color);
     background-image: var(--body1-color);
