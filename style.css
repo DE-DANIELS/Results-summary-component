@@ -25,12 +25,10 @@
 body {
     background-color: var(--body-color);
     font-family: var(--font-family);
-}
-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    min-height: 100vh;
 }
 #main {
     background-color: var(--body-color);
